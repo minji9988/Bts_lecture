@@ -30,5 +30,14 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Bts1Activity::class.java)
             startActivity(intent)
         }
+
+        //image2 부엉이 사진 저장
+        val image2 = findViewById<ImageView>(R.id.bts_image_2)
+
+        //부엉이 사진 클릭 시 크게 보이게 하기
+        image2.setOnClickListener{
+            val intent = Intent(this, Bts2Activity::class.java)
+            startActivity(intent)
+        }
     }
 }
